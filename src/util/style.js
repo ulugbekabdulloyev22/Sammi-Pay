@@ -9,7 +9,7 @@ export const style = {
   flexStart: "flex justify-center items-start",
   flexBetween: "flex justify-between items-center",
   paragraph:
-    "font-montserrat font-normal text-lightWhite text-[18px] leading-[30.8px] p-6",
-  heading:
-    "font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
+    "font-montserrat font-normal text-lightWhite text-[18px] leading-[30.8px]",
+  heading1:"font-montserrat font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full",
+  heading2:"font-montserrat font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
 };

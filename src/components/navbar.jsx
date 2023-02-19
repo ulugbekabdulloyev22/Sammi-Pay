@@ -6,6 +6,7 @@ import { style } from "../util/style";
 function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
   const [active, setActive] = useState("home");
+  console.log(active);
 
   return (
     <div className={`${style.flexBetween} w-full py-6`}>
