@@ -7,6 +7,7 @@ import {
   Home,
   Navbar,
   Statistics,
+  Tastimonials,
 } from "./components";
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
 
           {/* Business */}
           <Business />
+
+          {/* Tastimonials */}
+          <Tastimonials />
 
           {/* CTA */}
           <CTA />
