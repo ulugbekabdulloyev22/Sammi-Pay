@@ -1,5 +1,12 @@
 import { style } from "./util/style";
-import { Billing, Contract, Home, Navbar, Statistics } from "./components";
+import {
+  Billing,
+  Business,
+  Contract,
+  Home,
+  Navbar,
+  Statistics,
+} from "./components";
 
 function App() {
   return (
@@ -28,7 +35,8 @@ function App() {
           {/* Billing */}
           <Billing />
 
-          {/* Bussines */}
+          {/* Business */}
+          <Business />
 
           {/* CTA */}
 

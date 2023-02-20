@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --black-gradient: linear-gradient(144.39deg, #ffffff -278.58%, #6d6d6d -78.47%, #11101d 91.61%);
+  --card-shadow: 0 20px 100px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 * {
@@ -68,4 +73,9 @@
       #7de7eb 29.82%,
       #5ce1e6 51.94%,
       #33bbcf 90.29%);
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
 }
