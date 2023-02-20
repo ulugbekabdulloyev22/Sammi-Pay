@@ -1,4 +1,12 @@
-import { send, shield, star } from "../assets";
+import {
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navigationLinks = [
   {
@@ -88,5 +96,24 @@ export const feedback = [
       "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1082.jpg",
     name: "Lula Smitham Sr.",
     title: "architecto-repudiandae",
+  },
+];
+
+export const clients = [
+  {
+    id: "client-1",
+    logo: airbnb,
+  },
+  {
+    id: "client-2",
+    logo: coinbase,
+  },
+  {
+    id: "client-3",
+    logo: dropbox,
+  },
+  {
+    id: "client-4",
+    logo: binance,
   },
 ];

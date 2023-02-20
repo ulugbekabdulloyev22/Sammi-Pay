@@ -8,3 +8,5 @@ export { default as FeatureCard } from "./feature-card";
 export { default as CTA } from "./cta";
 export { default as Tastimonials } from "./testimonials";
 export { default as FeedbackCard } from "./feedback-card";
+export { default as Client } from "./client";
+export {default as ClientCard } from "./client-card";

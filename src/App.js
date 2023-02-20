@@ -2,6 +2,7 @@ import { style } from "./util/style";
 import {
   Billing,
   Business,
+  Client,
   Contract,
   CTA,
   Home,
@@ -42,6 +43,9 @@ function App() {
 
           {/* Tastimonials */}
           <Tastimonials />
+
+          {/* Client */}
+          <Client />
 
           {/* CTA */}
           <CTA />
