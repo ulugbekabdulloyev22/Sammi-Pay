@@ -1,5 +1,5 @@
 import { style } from "./util/style";
-import { Home, Navbar } from "./components";
+import { Home, Navbar, Statistics } from "./components";
 
 function App() {
   return (
@@ -15,6 +15,13 @@ function App() {
       <div className={`bg-primary ${style.flexStart}`}>
         <div className={`${style.container}`}>
           <Home />
+        </div>
+      </div>
+
+      {/* Statistics */}
+      <div className={`bg-primary ${style.paddingX} ${style.flexCenter}`}>
+        <div className={`${style.container}`}>
+          <Statistics />
         </div>
       </div>
     </div>
