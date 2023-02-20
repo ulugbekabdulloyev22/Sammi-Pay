@@ -1,5 +1,5 @@
 import { style } from "./util/style";
-import { Contract, Home, Navbar, Statistics } from "./components";
+import { Billing, Contract, Home, Navbar, Statistics } from "./components";
 
 function App() {
   return (
@@ -22,7 +22,17 @@ function App() {
       <div className={`bg-primary ${style.paddingX} ${style.flexCenter}`}>
         <div className={`${style.container}`}>
           <Statistics />
+          {/* Contract */}
           <Contract />
+
+          {/* Billing */}
+          <Billing />
+
+          {/* Bussines */}
+
+          {/* CTA */}
+
+          {/* Footer */}
         </div>
       </div>
     </div>
