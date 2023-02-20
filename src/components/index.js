@@ -5,3 +5,4 @@ export { default as Contract } from "./contract";
 export { default as Billing } from "./billing";
 export { default as Business } from "./business";
 export { default as FeatureCard } from "./feature-card";
+export { default as CTA } from "./cta";
