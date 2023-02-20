@@ -10,6 +10,7 @@ import {
   Statistics,
   Tastimonials,
 } from "./components";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <CTA />
 
           {/* Footer */}
+          <Footer />
         </div>
       </div>
     </div>

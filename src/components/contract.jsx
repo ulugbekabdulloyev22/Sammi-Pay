@@ -4,7 +4,7 @@ import Button from "./button";
 
 function Contract() {
   return (
-    <section className={`${layout.section}`}>
+    <section id="products" className={`${layout.section}`}>
       <div className={`${layout.sectionInfo}`}>
         <h2 className={`${style.heading2}`}>
           Bir necha oson qadamda <br className="sm:block hidden" /> kontrakt

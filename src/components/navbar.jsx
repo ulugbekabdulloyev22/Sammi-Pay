@@ -6,16 +6,17 @@ import { style } from "../util/style";
 function Navbar() {
   const [toggleNav, setToggleNav] = useState(false);
   const [active, setActive] = useState("home");
-  console.log(active);
 
   return (
     <div className={`${style.flexBetween} w-full py-6`}>
       {/* Logo */}
-      <img
-        src={logo}
-        alt="logo"
-        className="w-[130px] h-[35px] cursor-pointer"
-      />
+      <a href="/">
+        <img
+          src={logo}
+          alt="logo"
+          className="w-[130px] h-[35px] cursor-pointer"
+        />
+      </a>
 
       {/* Navigation link */}
       <ul
@@ -27,17 +28,17 @@ function Navbar() {
               key={item.id}
               className={`text-white cursor-pointer font-montserrat font-normal text-[16px]
                 ${index === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
-                ${active === item.id ? "text-blue-400" : "text-lightWhite"}
+                ${active === item.id ? "text-blue-500" : "text-lightWhite"}
                 hover:text-lightWhite transition-all duration-300`}
               onClick={() => setActive(item.id)}
             >
-              {item.title}
+              <a href={`#${item.id}`}>{item.title}</a>
             </li>
           ))}
       </ul>
 
       {/* Navigation btn */}
-      <div className={`sm:hidden flex flex-1 justify-end items-center`}>
+      <div className={`sm:hidden flex flex-1 justify-end items-center z-[99]`}>
         <img
           src={toggleNav ? close : menu}
           alt="menu"
@@ -57,11 +58,11 @@ function Navbar() {
                   key={item.id}
                   className={`text-white cursor-pointer font-montserrat font-normal text-[12px]
                   ${index === navigationLinks.length - 1 ? "mr-0" : "mr-10"}
-                  ${active === item.id ? "text-blue-400" : "text-lightWhite"}
+                  ${active === item.id ? "text-blue-500" : "text-lightWhite"}
                    hover:text-lightWhite transition-all duration-300`}
                   onClick={() => setActive(item.id)}
                 >
-                  {item.title}
+                  <a href={`#${item.id}`}>{item.title}</a>
                 </li>
               ))}
           </ul>

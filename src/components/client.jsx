@@ -4,7 +4,7 @@ import { ClientCard } from "./";
 
 function Client() {
   return (
-    <div className={`${style.flexCenter} my-4`}>
+    <div id="clients" className={`${style.flexCenter} my-4`}>
       <div className={`${style.flexCenter} flex-wrap w-full`}>
         {clients &&
           clients.map((client) => <ClientCard key={client.id} {...client} />)}
